@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../home page/main.css">
+    <link rel="stylesheet" href="../home page/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id = "TitlePar" style="display: flex;">
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn">
+            <img src="../imgs/menue.png"width = "20px" id = "menu_ParsAndClose">
+        </label>
+    
+        <div class="wrapper">
+            <ul>
+                <div><a href="#" style="text-decoration: none;"><img src="../imgs/profilepic.jpg" style="border-radius: 100px;width: 200px;"></a><a href="#" style="text-decoration: none;"><p id="UserName">Ali</p></a></div>
+                <li><a href="../home page/main.html">Samsarly</a></li>
+                <li><a href="#">My Properties</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="main.html">Settings</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">LogOut</a></li>
+            </ul>
+        </div>
+        <p style="font-size: 25px;font-weight: bold;">Settings</p>
+    </div>
+    <div id="SettingsBody" style="width: 100%;">
+        <div style="display: flex;justify-content: space-evenly;padding: 10px;">
+            <button id="btn" id = "Light"role="button" onclick="LightMode()">Light Mode</button>
+            <button id="btn" id = "Dark" role="button" onclick="DarkMode()">Dark Mode</button>
+        </div>
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <p>Preferrd Language</p>
+            <select id="Language" name="Language">
+                <option value="volvo">ara</option>
+                <option value="saab">Saab</option>
+              </select>
+        </div>
+    </div>
+<div id="PreLoader"></div>
+<script src="main.js"></script>
+</body>
+</html>
